@@ -1,0 +1,14 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0 30px;
+    line-height: 30px;
+    font-family: bold;
+    font-size: 20px;
+}
+.title h1{
+    margin-bottom: 15px;
+    font-size: 50px;
+}

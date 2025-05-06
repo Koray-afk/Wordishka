@@ -16,7 +16,7 @@ const languages = [
   { name: 'Dutch', flag: '🇳🇱', popular: false },
   { name: 'Swedish', flag: '🇸🇪', popular: false },
   { name: 'Polish', flag: '🇵🇱', popular: false },
-  { name: 'Turkish', flag: '🇹🇷', popular: false },
+  { name: 'Turkish', flag: '🇹🇷', popular: false }
 ];
 
 function Language() {
@@ -31,7 +31,7 @@ function Language() {
       <input
         type="text"
         placeholder="Search languages..."
-        className="search-input"
+        className="search-input "
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
