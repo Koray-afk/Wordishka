@@ -1,0 +1,124 @@
+.dictionary-card {
+    background-color: rgba(52, 111, 175, 0.367);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 69%;
+    margin: 60px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 30vh;
+  }
+  
+  .dictionary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    font-family: unset;
+  }
+  
+  .pronunciation {
+    color: #4a5055;
+    font-size: 1rem;
+  }
+  
+  .save-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .save-btn:hover {
+    background-color: #0b3061;
+    color: #fff;
+  }
+  
+  .tabs {
+    display: flex;
+    margin: 30px 0;
+    background-color: rgba(233, 235, 241, 0.886);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 8px;
+  }
+  
+  .tab-button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #051018;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+  }
+  
+  .tab-button:hover {
+    background-color: rgba(11, 48, 97, 0.1);
+  }
+  
+  .tab-button.active {
+    color: #fbfdff;
+    background-color: rgba(11, 48, 97, 0.729);
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .translation-word {
+    font-size: 1.2rem;
+  }
+  
+  span {
+    font-size: 0.8em; 
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .dictionary-card {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .tab-content {
+      font-size: 1rem;
+    }
+  
+    .translation-word {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .save-btn {
+      margin-top: 10px;
+    }
+  }

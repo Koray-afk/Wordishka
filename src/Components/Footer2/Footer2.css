@@ -1,0 +1,36 @@
+.Footer{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 0.5px solid black; */
+    padding: 15px 10px;
+}
+.Footer p{
+    padding-left: 30px;
+}
+.Footer ul{
+    display: flex;
+    gap: 30px;
+    padding: 0 30px
+}
+.Footer ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+@media (max-width:800px) {
+    .Footer{
+        display: block;
+        text-align: center;
+    }
+
+    .Footer ul li{
+        margin: 10px;
+        /* text-align: center; */
+    }
+    .Footer ul{
+        margin-top: 10px;
+        text-align: center;
+    }
+}

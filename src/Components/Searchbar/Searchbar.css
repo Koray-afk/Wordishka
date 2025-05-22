@@ -1,0 +1,84 @@
+.search-bar {
+    background: #0a1a3a9f;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .dropdowns select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    background-color: #ddd;
+    min-width: 120px;
+  }
+  
+  .input-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .input-button input {
+    flex: 1 1 300px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    min-width: 200px;
+  }
+  
+  .change-btn {
+    padding: 12px 20px;
+    background-color: white;
+    color: rgb(1, 1, 48);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 20px;
+  }
+  
+  .input-button button:hover {
+    background-color: #28436b;
+  }
+  
+
+  @media (max-width: 768px) {
+    .dropdowns {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .dropdowns select {
+      width: 100%;
+    }
+  
+    .input-button {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .input-button input {
+      width: 100%;
+    }
+  
+    .input-button button {
+      width: 100%;
+    }
+  }
