@@ -1,0 +1,73 @@
+.lesson-card {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .card-header {
+    height: 80px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .status-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 4px 10px;
+    font-size: 13px;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #222;
+  }
+  
+  .subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .duration {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .clock-icon {
+    margin-right: 6px;
+  }
+  
+  .review-button {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .review-button:hover {
+    background-color: #f2f2f2;
+  }
+  
