@@ -18,22 +18,22 @@ const LearningProgress = () => {
 
       <div className="progress-stats">
         <div className="stat-box">
-          <div className="stat-icon">📘</div>
+          <div className="stat-icon"></div>
           <div className="stat-value">7</div>
           <div className="stat-label">Total Lessons</div>
         </div>
         <div className="stat-box">
-          <div className="stat-icon">✅</div>
+          <div className="stat-icon"></div>
           <div className="stat-value">1</div>
           <div className="stat-label">Completed</div>
         </div>
         <div className="stat-box">
-          <div className="stat-icon">⏱️</div>
+          <div className="stat-icon"></div>
           <div className="stat-value">3</div>
           <div className="stat-label">In Progress</div>
         </div>
         <div className="stat-box">
-          <div className="stat-icon">🏅</div>
+          <div className="stat-icon"></div>
           <div className="stat-value">120</div>
           <div className="stat-label">Points Earned</div>
         </div>

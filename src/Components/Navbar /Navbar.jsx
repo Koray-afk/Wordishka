@@ -1,8 +1,37 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Navbar.css"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { auth } from '../Firebase';
+import { signOut, onAuthStateChanged } from 'firebase/auth';
 
 function Navbar() {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      localStorage.removeItem('currentProgress')
+      localStorage.removeItem('score')
+      localStorage.removeItem('selected')
+      localStorage.removeItem('finished')
+      await signOut(auth);
+      console.log("user logged out successfully");
+      alert("Logged Out Successfully");
+      navigate('/');
+    } catch (error) {
+      console.error('Logout error:', error);
+      alert("Logout failed. Please try again.");
+    }
+  };
+
   return (
     <div>
       <nav>
@@ -21,8 +50,14 @@ function Navbar() {
         </div>
 
         <div className="navright">
-            <button className='btn'>Log In</button>
-            <button className='btn'>Sing Up</button>
+          {user ? (
+            <button onClick={handleLogout} className="btn">Logout</button>
+          ) : (
+            <>
+              <Link to="/login" className="btn">Login</Link>
+              <Link to="/sign" className="btn">Register</Link>
+            </>
+          )}
         </div>
 
       </nav>

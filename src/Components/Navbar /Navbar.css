@@ -60,5 +60,8 @@ nav {
 
 
 .btn:hover {
-    color: green;
+    color: blue;
+}
+.btn{
+    text-decoration: none;
 }

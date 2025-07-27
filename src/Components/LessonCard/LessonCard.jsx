@@ -1,10 +1,13 @@
 import React from 'react';
 import './LessonCard.css';
 
-const LessonCard = ({ title, subtitle, duration, status }) => {
+const LessonCard = ({ title, subtitle, duration, status, image }) => {
   return (
     <div className="lesson-card">
       <div className="card-header">
+        <div className="card-image">
+          <img src={image} alt={title} />
+        </div>
         <span className="status-badge">{status}</span>
       </div>
       <div className="card-content">

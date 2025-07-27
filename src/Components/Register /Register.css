@@ -1,0 +1,105 @@
+.register-container {
+  max-width: 400px;
+  margin: 8px auto 0 auto;
+  padding: 32px 24px; 
+  border-radius: 16px;
+  /* box-shadow: 0 4px 24px rgba(0,0,0,0.08); */
+  font-family: 'NBInternationalProBoo', Arial, sans-serif;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="number"],
+.register-form input[type="search"],
+.register-form input[type="tel"],
+.register-form input[type="url"],
+.register-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  background: #fafbfc;
+}
+
+.register-form input:focus,
+.register-form textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px 0;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.register-form button:hover {
+  background: #1565c0;
+}
+
+.register-form .error-message {
+  color: #d32f2f;
+  margin-bottom: 12px;
+  font-size: 0.98rem;
+  text-align: center;
+}
+
+.register-form .success-message {
+  color: #388e3c;
+  margin-bottom: 12px;
+  font-size: 0.98rem;
+  text-align: center;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 38px;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+  user-select: none;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
