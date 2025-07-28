@@ -45,7 +45,7 @@ function Navbar() {
           <li><Link to="/dictionary">Dictionary</Link></li>
           <li><Link to="/Lessons">Lessons</Link></li>
           <li><Link to="/quizzes">Quizzes</Link></li>
-          <li><Link to="/progress">Progress</Link></li>
+          {/* <li><Link to="/progress">Progress</Link></li> */}
         </ul>
         </div>
 
